@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+header{
+
+    max-width: 1200px;
+    margin: 0px auto;
+    border: 1px solid gray;
+    background: #161616;
+
+    border-radius: 30px;
+}
+.header-up{
+    display: flex;
+}
+.header-up .section-1{
+   width: 50%;
+}
+.section-1 .postion{
+    width: 100%;
+}
+
+.section-1 img{
+    width: 100%;
+
+}
+
+.left-paragraph-1{
+    margin: 80px 10px 10px 60px;
+   
+}
+.header-big-text{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px; 
+
+
+color: #FFFFFF;
+}
+.left-paragraph-1 p{
+    font-family: 'Poppins',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+
+color: #FFFFFF;
+
+}
+.left-paragraph-1 button{
+    width: 187px;
+    height: 56px;
+    left: 246px;
+    top: 529px;
+    background: #DD0000;
+    border-radius: 5px;
+
+    margin-top: 30px;
+}
+.left-paragraph-1 button:hover{
+    animation:1s ease ;
+    background-color:#ff0505 ;
+}
+.left-paragraph-1 button a{
+    text-decoration: none;
+    color: #FFFFFF;
+
+    font-family: 'HelveticaNeue',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+
+}
+/* main starts */
+
+
+.main-section{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-gap: 1em ;
+     margin: 100px auto;
+    background-color: #ffffff;
+}
+
+.child{
+    background: #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid rgb(238, 237, 237);
+    padding: 20px;
+
+}
+
+.child:nth-child(1){
+    grid-row: 1/4;
+}
+.all-button{
+    background: #161616;
+    text-align: center;
+    align-items: center;
+padding: 20px;
+border-radius: 10px;
+}
+button{
+    width: 200px;
+}
+
+.child .information{
+    padding: 15px;
+}
+.child button{
+    background-color: #ffffff;
+    width: 100px;
+    padding: 8px 25px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+}
+.child button a{
+    text-align: center;
+    text-decoration: none;
+    padding:20px auto;
+    color: #2b2929;
+}
+
+.cards{
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 10px;
+}
+.card-btn button{
+    background-color: #ffffff;
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+    
+}
+.card-detail .card-tittle{
+    font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+
+color: #161616;
+margin-bottom: 10px;
+}
+.card-btn a{
+    
+        text-align: center;
+        text-decoration: none;
+        padding:20px auto;
+        color: #2b2929;
+       
+        
+
+    
+}
+.card-detail{
+    margin: 10px auto 20px 20px;
+}
+.cards .card-detail .card-info{
+    display: flex;
+    align-items: center;
+    padding-left:10px ;
+}
+.card-msg{
+    padding-left:50px ;
+
+}
+
+
+
+/* footer stars */
+
+footer{
+    background: #161616;
+    height: 300px;
+    width: 100%;
+   
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #DD0000;
+
+
+    width: 80%;
+    margin: 0 auto;
+}
+.footer .social a{
+    font-size: 25px;
+
+    text-decoration: none;
+    margin-left: 15px;
+}
+.footer-text{
+    text-align: center;
+    color: #B9B9B9;
+    justify-content: center;
+}
+.footer-text-h1{
+    padding-top: 50px;
+}
+.nav-2{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.nav-2 a{
+    text-decoration: none;
+    color: #B9B9B9;
+    margin-left: 15px;
+}
+
+
+.social .fa-brands.sociall{
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+
+/* mediaquary starts */
+
+/* small mobail device */
+
+@media only screen and (max-width:668px){
+    .header-up{
+        flex-direction: column;
+        align-items: center;
+    border-radius: 10px;
+    }
+    .section-1{
+        width: 100%;
+    }
+    .left-paragraph-1{
+        margin: 10px;
+    }
+    .header-big-text{
+
+        font-family: 'Poppins' , sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 33px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .left-paragraph-1 p{
+ 
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+    .left-paragraph-1 button{
+        width: 150px;
+        height: 56px;
+        background: #DD0000;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+
+    .left-paragraph-1 button a{
+        text-decoration: none;
+        color: #FFFFFF;
+    
+        font-family: 'HelveticaNeue',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+    }
+    .main-section{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    ul li{
+        list-style: none;
+    } 
+    ul li a{
+        padding: 10px;
+    }
+    footer .nav-2{
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+    
+ 
+}
+
+/* small mobail device end */
+
+
+/* medium pad divice start */
+
+@media only screen and (min-width:668px) and (max-width:992px){
+    .header-up{
+        flex-direction: row;
+        align-items: center;
+border-radius: 10px;
+    }
+    .section-1{
+        width: 100%;
+    }
+    .left-paragraph-1{
+        margin-left: 70px;
+    }
+    .header-big-text{
+
+        font-family: 'Poppins' , sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 33px;
+        color: #FFFFFF;
+    }
+    .left-paragraph-1 p{
+ 
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    /* text-align: center; */
+    color: rgba(255, 255, 255, 0.8);
+}
+
+    .left-paragraph-1 button{
+        width: 150px;
+        height: 56px;
+        background: #DD0000;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+
+    .left-paragraph-1 button a{
+        text-decoration: none;
+        color: #FFFFFF;
+    
+        font-family: 'HelveticaNeue',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+    }
+    .main-section{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+    button.pera{
+        color: #ffffff;
+        width: 200px;
+        margin-left:300px ;
+    }
+    .child{
+        display: none;
+    }
+
+ 
+}
